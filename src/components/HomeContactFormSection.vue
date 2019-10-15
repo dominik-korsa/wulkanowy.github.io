@@ -2,11 +2,11 @@
   <div class="contact-form home-section">
     <h2 class="contact-form__title">Kontakt</h2>
     <div class="contact-form__direct">
-      <a class="contact-form__direct-link" href="mailto:wulkanowyinc@gmail.com">
+      <a class="contact-form__direct-link" href="mailto:wulkanowyinc@gmail.com" title="Email">
         <span class="mdi mdi-email"></span>
         <span class="text">wulkanowyinc@gmail.com</span>
       </a>
-      <a class="contact-form__direct-link" href="https://discord.gg/vccAQBr">
+      <a class="contact-form__direct-link" href="https://discord.gg/vccAQBr" title="Discord">
         <span class="mdi mdi-discord"></span>
         <span class="text">wulkanowy</span>
       </a>
