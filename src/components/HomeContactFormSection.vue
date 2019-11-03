@@ -19,7 +19,6 @@
         class="contact__form-email"
         name="_replyto"
         required
-        placeholder="twój-email@example.com"
       >
       <label for="contact__form-subject" class="contact__form-label">Tytuł zgłoszenia:</label>
       <input
@@ -35,7 +34,6 @@
         id="contact__form-message"
         class="contact__form-message"
         required
-        placeholder="Twoja wiadomość"
       ></textarea>
       <input type="submit" class="contact__form-submit" value="Wyślij">
     </form>
@@ -187,7 +185,7 @@
     .contact__form-label {
       color: #fff;
       text-align: center;
-      margin: 8px 16px;
+      margin: 16px 24px 8px;
       font-size: 20px;
       font-family: 'Roboto', sans-serif;
     }
