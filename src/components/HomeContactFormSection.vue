@@ -21,6 +21,14 @@
         required
         placeholder="twój-email@example.com"
       >
+      <label for="contact__form-subject" class="contact__form-label">Tytuł zgłoszenia:</label>
+      <input
+        type="text"
+        id="contact__form-subject"
+        class="contact__form-subject"
+        name="_subject"
+        required
+      >
       <label for="contact__form-message" class="contact__form-label">Wiadomość:</label>
       <textarea
         name="message"
@@ -184,7 +192,7 @@
       font-family: 'Roboto', sans-serif;
     }
 
-    &__form-email, &__form-message {
+    &__form-email, &__form-message, &__form-subject {
       background: none;
       border: none;
       color: #fff;
@@ -217,6 +225,10 @@
 
     &__form-email {
       font-family: 'Roboto Mono', monospace;
+    }
+
+    &__form-subject {
+      font-family: 'Roboto', sans-serif;
     }
 
     &__form-message {
