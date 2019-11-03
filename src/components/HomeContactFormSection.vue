@@ -11,7 +11,7 @@
         <span class="text">wulkanowy</span>
       </a>
     </div>
-    <form class="contact__form" action="https://formspree.io/xqkzgzqp" method="POST">
+    <form class="contact__form" action="https://formspree.io/xdonynaz" method="POST">
       <label for="contact__form-email" class="contact__form-label">Twój adres email:</label>
       <input
         type="email"
