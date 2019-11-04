@@ -1,16 +1,6 @@
 <template>
   <div class="contact home-section">
     <h2 class="contact__title">Kontakt</h2>
-    <div class="contact__direct">
-      <a class="contact__direct-link" href="mailto:wulkanowyinc@gmail.com" title="Email">
-        <span class="mdi mdi-email"></span>
-        <span class="text">wulkanowyinc@gmail.com</span>
-      </a>
-      <a class="contact__direct-link" href="https://discord.gg/vccAQBr" title="Discord">
-        <span class="mdi mdi-discord"></span>
-        <span class="text">wulkanowy</span>
-      </a>
-    </div>
     <form class="contact__form" action="https://formspree.io/xdonynaz" method="POST">
       <label for="contact__form-email" class="contact__form-label">Twój adres email:</label>
       <input
@@ -38,6 +28,16 @@
       ></textarea>
       <input type="submit" class="contact__form-submit" value="Wyślij">
     </form>
+    <div class="contact__direct">
+      <a class="contact__direct-link" href="mailto:wulkanowyinc@gmail.com" title="Email">
+        <span class="mdi mdi-email"></span>
+        <span class="text">wulkanowyinc@gmail.com</span>
+      </a>
+      <a class="contact__direct-link" href="https://discord.gg/vccAQBr" title="Discord">
+        <span class="mdi mdi-discord"></span>
+        <span class="text">wulkanowy</span>
+      </a>
+    </div>
   </div>
 </template>
 
@@ -73,11 +73,11 @@
     @media screen and (max-width: 875px) {
       grid-template-columns: 1fr;
       grid-template-rows: auto auto 1fr;
-      padding: 0 16px 16px;
+      padding: 0 48px 16px;
     }
 
     @media screen and (max-width: 450px) {
-      padding: 0 8px 16px;
+      padding: 0 24px 16px;
     }
 
     &__title {
@@ -92,7 +92,7 @@
 
     &__direct {
       grid-column: 1;
-      grid-row: 3;
+      grid-row: 5;
       align-self: center;
       display: flex;
       flex-direction: row;
@@ -167,7 +167,7 @@
     &__form {
       display: flex;
       padding: 8px 32px;
-      grid-row: 5;
+      grid-row: 3;
       grid-column: 1;
       flex-direction: column;
       justify-content: center;
