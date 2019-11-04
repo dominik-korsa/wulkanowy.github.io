@@ -183,10 +183,9 @@
       }
     }
 
-    .contact__form-label {
+    &__form-label {
       color: #fff;
-      text-align: center;
-      margin: 16px 24px 8px;
+      margin: 16px 8px 8px;
       font-size: 20px;
       font-family: 'Roboto', sans-serif;
     }
