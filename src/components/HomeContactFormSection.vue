@@ -53,8 +53,8 @@
     padding: 0 32px 32px;
     overflow: hidden;
     display: grid;
-    grid-template-columns: 10vw auto 1fr 10vw;
-    grid-template-rows: auto 1fr auto 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto 1fr auto 1fr;
     background:
       linear-gradient(
       rgba(0, 0, 0, 0.6),
@@ -66,7 +66,7 @@
     background-attachment: fixed;
 
     @media screen and (max-width: 1250px) {
-      grid-template-columns: 0 auto 1fr 0;
+      grid-template-columns: 1fr;
     }
 
     @media screen and (max-width: 875px) {
@@ -85,24 +85,23 @@
       color: #fff;
       font-family: 'Roboto', sans-serif;
       font-weight: 400;
-      grid-column: 1/5;
+      grid-column: 1;
       grid-row: 1;
-
-      @media screen and (max-width: 875px) {
-        grid-column: 1;
-      }
     }
 
     &__direct {
-      grid-column: 2;
+      grid-column: 1;
       grid-row: 3;
       padding: 8px 32px;
       align-self: center;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
 
       @media screen and (max-width: 875px) {
-        grid-column: 1;
         grid-row: 2;
         justify-self: center;
+        flex-direction: column;
       }
     }
 
@@ -114,7 +113,7 @@
       padding-left: 12px;
       padding-right: 16px;
       height: 48px;
-      margin: 16px 0;
+      margin: 8px;
       border-radius: 3px;
       text-decoration: none;
       color: #000;
@@ -168,15 +167,17 @@
     &__form {
       display: flex;
       padding: 8px 32px;
-      grid-row: 3;
-      grid-column: 3;
+      grid-row: 5;
+      grid-column: 1;
       flex-direction: column;
       justify-content: center;
       align-items: stretch;
       min-height: 60vh;
+      max-width: 768px;
+      width: 100%;
+      justify-self: center;
 
       @media screen and (max-width: 875px) {
-        grid-column: 1;
         grid-row: 3;
         min-height: initial;
       }
@@ -246,6 +247,14 @@
       margin-top: 16px;
       cursor: pointer;
       min-height: 48px;
+
+      @media screen and (max-width: 450px) {
+        padding: 4px;
+        padding-left: 8px;
+        padding-right: 10px;
+        min-height: 32px;
+        font-size: 16px;
+      }
 
       &:focus {
         outline: none;
