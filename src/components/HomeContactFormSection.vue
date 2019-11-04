@@ -48,7 +48,7 @@
 
 <style lang="scss">
   .contact {
-    height: 100vh;
+    min-height: 100vh;
     box-sizing: border-box;
     padding: 0 32px 32px;
     overflow: hidden;
@@ -92,7 +92,7 @@
     &__direct {
       grid-column: 1;
       grid-row: 3;
-      padding: 8px 32px;
+      padding: 8px 0;
       align-self: center;
       display: flex;
       flex-direction: row;
@@ -200,6 +200,8 @@
       border-radius: 5px;
       padding: 4px 8px;
       transition: background-color 300ms;
+      width: 100%;
+      box-sizing: border-box;
 
       &::placeholder {
         color: #fffa;
@@ -247,6 +249,8 @@
       margin-top: 16px;
       cursor: pointer;
       min-height: 48px;
+      width: 100%;
+      box-sizing: border-box;
 
       @media screen and (max-width: 450px) {
         padding: 4px;
