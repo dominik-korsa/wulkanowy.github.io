@@ -10,7 +10,7 @@
         name="_replyto"
         required
       >
-      <label for="contact__form-subject" class="contact__form-label">Tytuł zgłoszenia:</label>
+      <label for="contact__form-subject" class="contact__form-label">Temat:</label>
       <input
         type="text"
         id="contact__form-subject"
