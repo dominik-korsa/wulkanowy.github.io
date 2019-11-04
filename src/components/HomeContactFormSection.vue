@@ -33,6 +33,7 @@
         name="message"
         id="contact__form-message"
         class="contact__form-message"
+        rows="5"
         required
       ></textarea>
       <input type="submit" class="contact__form-submit" value="Wyślij">
@@ -92,7 +93,6 @@
     &__direct {
       grid-column: 1;
       grid-row: 3;
-      padding: 8px 0;
       align-self: center;
       display: flex;
       flex-direction: row;
@@ -236,6 +236,8 @@
       font-family: 'Roboto', sans-serif;
       flex-grow: 1;
       resize: vertical;
+      line-height: 30px;
+      min-height: 160px; // 5 rows - 5 * 30px (line height) + 2 * 1px (border) + 2 * 4px (padding)
     }
 
     &__form-submit {
