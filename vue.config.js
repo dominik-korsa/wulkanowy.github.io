@@ -1,7 +1,7 @@
 const PrerenderSPAPlugin = require('prerender-spa-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
-const routes = require('./src/routes');
+const routes = require('./src/router/routes');
 const faqMap = require('./src/assets/faq-map.json');
 
 const Renderer = PrerenderSPAPlugin.PuppeteerRenderer;

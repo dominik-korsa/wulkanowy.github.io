@@ -1,8 +1,8 @@
-const faqMap = require('./assets/faq-map.json');
+const faqMap = require('../assets/faq-map.json');
 
-const Home = () => import(/* webpackChunkName: "home" */ './views/Home.vue');
-const PrivacyPolicy = () => import(/* webpackChunkName: "privacy-policy" */ './views/PrivacyPolicy.vue');
-const FAQ = () => import(/* webpackChunkName: "faq" */ './views/FAQ.vue');
+const Home = () => import(/* webpackChunkName: "home" */ '../views/Home.vue');
+const PrivacyPolicy = () => import(/* webpackChunkName: "privacy-policy" */ '../views/PrivacyPolicy.vue');
+const FAQ = () => import(/* webpackChunkName: "faq" */ '../views/FAQ.vue');
 
 module.exports = [
   {
